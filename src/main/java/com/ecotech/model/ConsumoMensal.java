@@ -2,14 +2,13 @@ package com.ecotech.model;
 
 import jakarta.persistence.*;
 
-@Entity
 public class ConsumoMensal {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+
     private Long id;
 
     private String mes;
     private int consumo;
+    private int ano;
 
     public Long getId() { return id; }
     public void setId(Long id) { this.id = id; }
@@ -19,4 +18,7 @@ public class ConsumoMensal {
 
     public int getConsumo() { return consumo; }
     public void setConsumo(int consumo) { this.consumo = consumo; }
+
+    public int getAno() { return ano; }
+    public void setAno(int ano) { this.ano = ano; }
 }
