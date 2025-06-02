@@ -12,4 +12,5 @@ public interface ConsumoEquipamentoRepository extends JpaRepository<ConsumoEquip
     // como buscar por mês e ano, ou por dispositivo.
     List<ConsumoEquipamento> findByMesAndAno(String mes, int ano);
     List<ConsumoEquipamento> findByDispositivoIdAndMesAndAno(Long dispositivoId, String mes, int ano);
+    List<ConsumoEquipamento> findByAno(int ano); // Adicionado para o novo endpoint
 }
